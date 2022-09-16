@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Suspense, useState} from 'react';
 import './App.css';
+import Header from './Components/Header';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ListaPeliculas from './Components/ListaPeliculas';
+import Detalles from './Components/Detalles';
 
 function App() {
+
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-gradient-to-tr from-gray-400 via-gray-600 to-blue-800 flex flex-col h-screen">
+      
+    <Header/>
+    <ListaPeliculas/>
+    <Detalles/>
+
     </div>
   );
 }
+
 
 export default App;
