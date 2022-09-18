@@ -10,4 +10,4 @@ Los estilos de la web están creados mediante el uso de Tailwind.
 
 Se ha intentado implementar algo de testing mediante el uso de React Testing Library.
 
-Para probar el front basta con clonar el repositorio, instalar las dependencias necesarias (npm i) e iniciar la aplicación mediante el comando npm run start
+Para probar el front es necesario haber iniciado el back para que se puedan recuperar los datos. Una vez iniciado el back, basta con clonar el repositorio, instalar dependencias y ejecutar el comando npm run start.
