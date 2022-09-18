@@ -9,3 +9,5 @@ En la pagina de detalles se ha implementado una funcion para recoger una valorac
 Los estilos de la web están creados mediante el uso de Tailwind.
 
 Se ha intentado implementar algo de testing mediante el uso de React Testing Library.
+
+Para probar el front basta con clonar el repositorio, instalar las dependencias necesarias (npm i) e iniciar la aplicación mediante el comando npm run start
