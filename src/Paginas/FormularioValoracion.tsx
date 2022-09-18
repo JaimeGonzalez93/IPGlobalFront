@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-const FormularioValoracion = () => {
+interface Props {
+    id: number
+}
 
-    const URL = "a"
+const FormularioValoracion = ({id}: Props) => {
+
+    
     const [inputValues, setInputValues] = useState({})
+
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement | HTMLButtonElement>) => {
         event.preventDefault()
@@ -12,7 +17,7 @@ const FormularioValoracion = () => {
     }
 
     const EnviarValoracion = () => {
-            axios.post(URL, 
+            axios.post(`http://127.0.0.1:8000/valoracion/${id}/${inputValues}`, 
                 {valoracion: inputValues},
                 {headers: {
                     mode: "cors"

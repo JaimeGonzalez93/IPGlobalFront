@@ -37,7 +37,7 @@ const Detalles = () => {
         <div className=''>
           <p className='text-white text-3xl text-left my-14'>Fecha de estreno: {detallePelicula.fechaEstreno}</p>
           <p className='text-white text-3xl text-left my-14'>Valoración: {detallePelicula.valoracion}</p>
-          <FormularioValoracion/>
+          <FormularioValoracion id={detallePelicula.id}/>
         </div>
       </div>
     </div>
